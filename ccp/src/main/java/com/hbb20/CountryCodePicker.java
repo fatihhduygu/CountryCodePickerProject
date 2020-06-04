@@ -29,6 +29,9 @@ import android.widget.Toast;
 import androidx.annotation.DrawableRes;
 import androidx.annotation.IdRes;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
+
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
@@ -839,7 +842,8 @@ public class CountryCodePicker extends RelativeLayout {
             textView_selectedCountry.setText(displayText);
         }
 
-        imageViewFlag.setImageResource(selectedCCPCountry.getFlagID());
+        Glide.with(context).load(selectedCCPCountry.getFlagID()).apply(RequestOptions.circleCropTransform()).into(imageViewFlag);
+        //imageViewFlag.setImageResource(selectedCCPCountry.getFlagID());
 
         if (onCountryChangeListener != null) {
             onCountryChangeListener.onCountrySelected();
