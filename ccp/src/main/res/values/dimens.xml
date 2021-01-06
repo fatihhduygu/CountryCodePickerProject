@@ -2,4 +2,5 @@
 <resources>
     <dimen name="google_1x">8dp</dimen>
     <dimen name="ccp_padding">8dp</dimen>
+    <dimen name="padding_4">8dp</dimen>
 </resources>

@@ -295,10 +295,6 @@ public class CountryCodePicker extends RelativeLayout {
             //international formatting only
             internationalFormattingOnly = a.getBoolean(R.styleable.CountryCodePicker_ccp_internationalFormattingOnly, true);
 
-            // dialog content padding.
-            ccpPadding = (int) a.getDimension(R.styleable.CountryCodePicker_ccp_padding, context.getResources().getDimension(R.dimen.ccp_padding));
-            relativeClickConsumer.setPadding(ccpPadding, ccpPadding, ccpPadding, ccpPadding);
-
             //example number hint type
             int hintNumberTypeIndex = a.getInt(R.styleable.CountryCodePicker_ccp_hintExampleNumberType, 0);
             hintExampleNumberType = PhoneNumberType.values()[hintNumberTypeIndex];

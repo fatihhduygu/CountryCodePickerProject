@@ -7,9 +7,7 @@
     <RelativeLayout
         android:id="@+id/rlClickConsumer"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ccp_selectable_bg"
-        android:padding="@dimen/ccp_padding">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:id="@+id/linear_flag_holder"
@@ -17,8 +15,8 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_gravity="center_vertical"
-            android:layout_marginEnd="@dimen/google_1x"
-            android:layout_marginRight="@dimen/google_1x">
+            android:layout_marginEnd="@dimen/padding_4"
+            android:layout_marginRight="@dimen/padding_4">
 
             <LinearLayout
                 android:id="@+id/linear_flag_border"
